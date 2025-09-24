@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projectsihjason</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+
+    <div class="container">
+        <h1>🔥 ESP8266 Data Monitor</h1>
+        
+        <div class="status loading" id="status">Connecting...</div>
+        
+        <div class="data-card">
+            <h3>Message from ESP8266:</h3>
+            <div class="message" id="message">Loading...</div>
+        </div>
+        
+        <div class="data-card">
+            <h3>Last Updated:</h3>
+            <div class="timestamp" id="timestamp">Loading...</div>
+        </div>
+        
+        <div class="data-card">
+            <h3>Real-time Updates:</h3>
+            <div id="updates-count">0 updates received</div>
+        </div>
+
+        <div class="data-card">
+            <h3>Last 7 Updates Timeline:</h3>
+            <div class="chart-container">
+                <canvas id="timestampChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
